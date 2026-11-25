@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yongjin Kim – Assistant Professor of Finance</title>
+<meta name="description" content="Personal website of Yongjin Kim, assistant professor of finance at the University of New Mexico.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff; --text: #1d2430; --muted: #5b6574;
+    --line: #dde1e8; --accent: #25409a; --soft: #eff1f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171d; --text: #e6e9ef; --muted: #9aa4b2;
+      --line: #2a303a; --accent: #8fa8ff; --soft: #1e232c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0; color: var(--text); background: var(--bg);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 18px; line-height: 1.6;
+  }
+  main { max-width: 56rem; margin: 0 auto; padding: 3.5rem 1.5rem 4rem; }
+  a { color: var(--accent); text-underline-offset: 0.2em; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  header { display: grid; grid-template-columns: 11rem 1fr; gap: 2rem; align-items: start; }
+  .photo {
+    position: relative; width: 11rem; aspect-ratio: 4 / 5; overflow: hidden;
+    background: var(--soft); border-radius: 4px;
+    display: grid; place-items: center;
+    color: var(--muted); font-size: 0.8rem; text-align: center; padding: 0.5rem;
+  }
+  .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  h1 { margin: 0 0 0.35rem; font-size: 2.1rem; line-height: 1.15; font-weight: 600; letter-spacing: -0.01em; }
+  .role { margin: 0; color: var(--muted); }
+  .contact { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; font-size: 1rem; }
+  .cv {
+    display: inline-block; margin-top: 1.1rem; padding: 0.45rem 0.95rem;
+    border: 1.5px solid var(--accent); border-radius: 4px;
+    color: var(--accent); font-size: 0.95rem; font-weight: 600; text-decoration: none;
+  }
+  .cv:hover { background: var(--accent); color: var(--bg); }
+
+  section { margin-top: 2.75rem; }
+  h2 { margin: 0 0 1.25rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--line); font-size: 1.3rem; font-weight: 600; color: var(--muted); }
+  h3 { margin: 4.0rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--line); font-size: 1.3rem; font-weight: 600; color: var(--muted); }
+  p { margin: 0 0 1rem; }
+
+  .pubs { list-style: none; padding: 0; margin: 0; }
+  .pubs li { margin-bottom: 1.4rem; }
+  .pubs p { margin: 0; }
+  .title { font-weight: 600; }
+  .venue { color: var(--muted); }
+  .venue a { margin-left: 0.6rem; font-size: 0.95rem; }
+  .links { margin-top: 0.3rem; font-size: 0.95rem; display: flex; gap: 1.1rem; }
+
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+
+  @media (max-width: 560px) {
+    header { grid-template-columns: 1fr; gap: 1.25rem; }
+    .photo { width: 9rem; }
+    h1 { font-size: 1.8rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <!-- PERSONAL INFORMATION -->
+  <header>
+    <div class="photo">
+      photo.jpg
+      <!-- Put your photo in this folder and name it photo.jpg. Until then, the gray box stays. -->
+      <img src="photo.jpg" alt="Portrait of Yongjin Kim" onerror="this.remove()">
+    </div>
+    <div>
+      <h1>Yongjin Kim</h1>
+      <p class="role">Assistant Professor of Finance<br>University of New Mexico</p>
+      <ul class="contact">
+        <li><a href="mailto:yjkim99@unm.edu">yjkim99@unm.edu</a></li>
+        <li><a href="https://orcid.org/0000-0002-7778-2966">ORCID</a></li>
+        <li><a href="https://papers.ssrn.com/Sol3/Cf_Dev/AbsByAuth.cfm?per_id=2459253">SSRN</a></li>
+      </ul>
+      <a class="cv" href="cv_Kim.pdf">Curriculum vitae</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I am an assistant professor of finance at the University of New Mexico, where I teach securities analysis and financial management. My research focuses on asset pricing, derivatives and investors' belief formation. </p>
+  </section>
+
+  <!-- PUBLICATIONS: newest first. To add a link, put <a href="URL">Paper</a> at the end of a venue line. -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul class="pubs">
+      <li>
+        <p class="title">Learning about the Consumption Risk Exposure of Firms</p>
+        <p>with Lars-Alexander Kuehn and Kai Li</p>
+        <p class="venue"><em>Journal of Financial Economics</em>, 2024 <a href="https://doi.org/10.1016/j.jfineco.2023.103759">Published Article</a></p>
+      </li>
+      <li>
+        <p class="title">Does Macro-Asset Pricing Matter for Corporate Finance?</p>
+        <p>with Bryan Routledge</p>
+        <p class="venue"><em>Critical Finance Review</em>, Volume 13, Issue 1–2, pp. 45–82, February 2024 <a href="https://doi.org/10.1561/104.00000136">Published Article</a> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3038700">SSRN</a></p>
+      </li>
+      <li>
+        <p class="title">Does Corporate Investment Respond to the Time-Varying Cost of Capital? Empirical Evidence</p>
+        <p class="venue"><em>Journal of Financial and Quantitative Analysis</em>, Volume 57, Issue 2, pp. 629–668, March 2022 <a href="https://doi.org/10.1017/S0022109020000939">Published Article</a> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3042471">SSRN</a></p>
+      </li>
+    </ul>
+
+    <h3>Working Papers</h3>
+    <ul class="pubs">
+      <li>
+        <p class="title">Bitcoin Return Predictability</p>
+        <p>with Lars-Alexander Kuehn</p>
+        <p class="venue">SSRN</p>
+      </li>
+      <li>
+        <p class="title">Learning from Limited History: Recency Bias and Risk Aversion to Bitcoin</p>
+        <p>with Lars-Alexander Kuehn</p>
+        <p class="venue"></p> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7005558">SSRN</a></p>
+      </li>
+      <li>
+        <p class="title">Debt Maturity Choice and Firms’ Investment</p>
+        <p class="venue"></p> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3038633">SSRN</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Yongjin Kim</footer>
+</main>
+</body>
+</html>
